@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
+
+
+</head>
+
+<body>
+    <div id="veu-app">
+        <h1>click Event</h1>
+        <button v-on:click.once="Add(1)">add a year</button>
+        <button v-on:click="substract(1)">subtract a year</button>
+        <button v-on:dblclick="Add(10)">add 10 year</button>
+        <button v-on:dblclick="substract(10)">subtract 10 year</button>
+
+        <p>Age : {{ age }}</p>
+
+        <div id="canvass" v-on:mousemove='updatexy'>
+            {{ x }},{{y}}
+        </div>
+        <a v-on:click.prevent="click" href="https://www.thejahid.com.">the jahid</a>
+    </div>
+
+    <script src="app.js">
+
+    </script>
+
+</body>
+
+</html>
