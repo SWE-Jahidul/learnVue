@@ -14,18 +14,16 @@
 
 <body>
     <div id="veu-app">
-        <h1>click Event</h1>
-        <button v-on:click.once="Add(1)">add a year</button>
-        <button v-on:click="substract(1)">subtract a year</button>
-        <button v-on:dblclick="Add(10)">add 10 year</button>
-        <button v-on:dblclick="substract(10)">subtract 10 year</button>
+        <h1>KeyBoard Event</h1>
+        <label>Name :</label>
+        <input type="text" v-model='name'>
+        <span> {{name}}</span>
 
-        <p>Age : {{ age }}</p>
-
-        <div id="canvass" v-on:mousemove='updatexy'>
-            {{ x }},{{y}}
-        </div>
-        <a v-on:click.prevent="click" href="https://www.thejahid.com.">the jahid</a>
+        <label>Age :</label>
+        <input type="number" v-model='age'>
+        <span>
+            {{age}}
+        </span>
     </div>
 
     <script src="app.js">
