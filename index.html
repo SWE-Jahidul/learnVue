@@ -13,16 +13,18 @@
 </head>
 
 <body>
-    <div id="veu-app-one">
-       <h1>Vue application one </h1>
-        <greeting></greeting>
-    </div>
-    <div id="veu-app-two">
-            <h1>Vue application Two </h1>
-            <greeting></greeting>
+    <div id="vue-app">
+        <h1>Refs</h1>
+        <input type="text" ref="input" />
+        <button v-on:click="redrefs">
+            Submit
+        </button>
 
+        <p> Your Fav Food : {{ output }}</p>
+        <div ref="test">
+            hello
+        </div>
     </div>
-
     <script src="app.js"></script>
 
 </body>
