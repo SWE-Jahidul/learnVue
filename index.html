@@ -13,22 +13,19 @@
 </head>
 
 <body>
-    <div id="veu-app">
-        <h1>KeyBoard Event</h1>
-        <label>Name :</label>
-        <input type="text" v-model='name'>
-        <span> {{name}}</span>
+    <div id="veu-app-one">
+        <h2>{{title}}</h2>
+        <p>{{ greet }}</p>
 
-        <label>Age :</label>
-        <input type="number" v-model='age'>
-        <span>
-            {{age}}
-        </span>
+        
+    </div>
+    <div id="veu-app-two">
+        <h2>{{title}}</h2>
+        <p>{{greet}}</p>
+        <button v-on:click="changetitle">Change App One Title</button>
     </div>
 
-    <script src="app.js">
-
-    </script>
+    <script src="app.js"></script>
 
 </body>
 
